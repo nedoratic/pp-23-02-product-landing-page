@@ -17,26 +17,26 @@
 		<!-- CSS -->
 		<link rel="stylesheet" href="./css/main.css" />
 	</head>
-	<body>
+	<body class="overflow-hidden">
 		<!-- Navbar Start -->
-		<nav class="navbar bg-light px-3 py-1">
+		<nav class="navbar bg-transparent p-1 p-sm-3 w-100">
 			<!-- Navbar Brand Name -->
-			<a class="navbar-brand" href="#"><h1>Essentia Naturalis</h1></a>
+			<a class="navbar-brand text-white" href="#"><h1>Essentia Naturalis</h1></a>
 			<!-- Navbar Hamburger Menu Button -->
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle menu">
 				<i class="bi bi-list"></i>
 			</button>
 			<!-- Navbar Menu Options -->
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav vh-100 w-100 container justify-content-center align-items-center">
+			<div class="navbar-collapse collapse" id="menu">
+				<ul class="navbar-nav container vh-100 justify-content-center align-items-center">
 					<li class="nav-item">
-						<a class="nav-link" href="#">Home</a>
+						<a class="nav-link text-white" href="#"><h3>Home</h3></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">About</a>
+						<a class="nav-link text-white" href="#"><h3>About</h3></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Contact</a>
+						<a class="nav-link text-white" href="#"><h3>Contact</h3></a>
 					</li>
 				</ul>
 			</div>
@@ -44,6 +44,10 @@
 		<!-- Navbar End -->
 
 		<!-- Hero Start -->
+		<section class="hero">
+			<div class="hero__overlay"></div>
+			<video class="hero__vid" src="./vid/hero-vid-1080p.mp4" playsinline="playsinline" autoplay="autoplay" loop="loop" muted="muted" loading="lazy"></video>
+		</section>
 		<!-- Hero End -->
 
 		<!-- Section One Start -->
