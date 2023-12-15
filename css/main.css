@@ -6,3 +6,46 @@
 	--bs-body-bg: #fbf0f6;
 	--bs-body-font-family: "Montserrat", sans-serif;
 }
+
+/* GENERAL */
+
+a {
+	color: var(--primary-color);
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: var(--primary-color);
+}
+
+/* HEADER */
+
+.header {
+	background: var(--primary-color);
+	z-index: 1;
+}
+
+#navbar {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(255, 247, 231, 1);
+	z-index: 2;
+}
+
+/* NAVIGATION MENU */
+
+.navigation-menu__menu-button-close {
+	position: absolute;
+	top: 1em;
+	right: 1em;
+	color: var(--primary-color);
+}
+
+.navigation-menu__container {
+	height: 100vh;
+	padding: 0 1em;
+}

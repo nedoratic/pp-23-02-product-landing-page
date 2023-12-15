@@ -18,8 +18,64 @@
 		<link rel="stylesheet" href="./css/main.css" />
 	</head>
 	<body>
-		<!-- Navbar Start -->
-		<!-- Navbar End -->
+		<!-- Header Start -->
+		<header class="header p-3 position-absolute start-0 top-0 end-0">
+			<div class="header__container d-flex justify-content-between align-items-center">
+				<a class="header__title text-decoration-none text-white fs-5 fw-bold" href="#">Essentia Naturalis</a>
+				<button class="header__menu-button-open navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="bi bi-list"></i>
+				</button>
+			</div>
+		</header>
+		<!-- Header End -->
+
+		<!-- Navigation Menu Start -->
+		<nav class="navigation-menu collapse navbar-collapse dropdown-nav" id="navbar">
+			<div class="navigation-menu__container container-xxl d-flex align-items-start align-items-md-center">
+				<div class="row align-items-start">
+					<div class="col-12 col-sm-4 mt-4">
+						<a class="row text-decoration-none" href="#">
+							<div class="col-2 col-sm-12 mb-4">
+								<img class="img-fluid" src="./img/1-coffee-flavour.jpg" alt="Coffee Flavour" width="553" height="746" loading="lazy" />
+							</div>
+							<div class="col-10">
+								<h3>Amazing Flavour</h3>
+								<p>Find out more about our amazing flavour</p>
+								<p>Learn more <i class="bi bi-arrow-right"></i></p>
+							</div>
+						</a>
+					</div>
+					<div class="col-12 col-sm-4 mt-4">
+						<a class="row text-decoration-none" href="#">
+							<div class="col-2 col-sm-12 mb-4">
+								<img class="img-fluid" src="./img/2-health-benefits.jpg" alt="Coffee Flavour" width="553" height="746" loading="lazy" />
+							</div>
+							<div class="col-10">
+								<h3>Surprising Health Benefits</h3>
+								<p>Find out more about health benefits</p>
+								<p>Learn more <i class="bi bi-arrow-right"></i></p>
+							</div>
+						</a>
+					</div>
+					<div class="col-12 col-sm-4 mt-4">
+						<a class="row text-decoration-none" href="#">
+							<div class="col-2 col-sm-12 mb-4">
+								<img class="img-fluid" src="./img/3-essential-nutrients.jpg" alt="Coffee Flavour" width="553" height="746" loading="lazy" />
+							</div>
+							<div class="col-10">
+								<h3>Essential Nutrients</h3>
+								<p>Find out more about essential nutrients</p>
+								<p>Learn more <i class="bi bi-arrow-right"></i></p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<button class="navigation-menu__menu-button-close navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="bi bi-x-lg"></i>
+				</button>
+			</div>
+		</nav>
+		<!-- Navigation menu End -->
 
 		<!-- Hero Start -->
 		<!-- Hero End -->
