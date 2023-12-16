@@ -4,7 +4,7 @@
 
 ### Tools and Tech:
 
-CLI, Terminal, Zsh, Version Control, Git, GitHub, VS Code, HTML, CSS, Bootstrap
+CLI, Terminal, Zsh, Version Control, Git, GitHub, VS Code, HTML, CSS, Bootstrap, JS
 
 ### Approach and Methodology
 
