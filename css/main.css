@@ -156,7 +156,7 @@ a:focus {
 	animation: bounce 1s infinite alternate;
 }
 
-/* SECTION ONE */
+/* SECTIONS */
 
 .section {
 	background: rgba(255, 255, 255, 1);
@@ -174,4 +174,21 @@ a:focus {
 
 .section__col h1 {
 	text-align: left;
+}
+
+/* FOOTER */
+
+.footer {
+	color: var(--bs-body-bg);
+}
+
+.footer a {
+	color: var(--bs-body-bg);
+}
+
+.footer h1,
+.footer h2,
+.footer h3,
+.footer p {
+	color: var(--bs-body-bg);
 }
