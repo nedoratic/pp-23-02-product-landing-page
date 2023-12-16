@@ -17,7 +17,7 @@
 		<!-- CSS -->
 		<link rel="stylesheet" href="./css/main.css" />
 	</head>
-	<body>
+	<body id="main-body">
 		<!-- Header Start -->
 		<header class="header p-3 position-absolute start-0 top-0 end-0">
 			<div class="header__container d-flex justify-content-between align-items-center">
@@ -34,7 +34,7 @@
 			<div class="navigation-menu__container container-xxl d-flex align-items-start align-items-md-center">
 				<div class="row align-items-start">
 					<div class="col-12 col-sm-4 mt-4">
-						<a class="row text-decoration-none" href="#">
+						<a class="row text-decoration-none" href="#section__one">
 							<div class="col-2 col-sm-12 mb-4">
 								<img class="img-fluid" src="./img/1-coffee-flavour.jpg" alt="Coffee Flavour" width="553" height="746" loading="lazy" />
 							</div>
@@ -46,9 +46,9 @@
 						</a>
 					</div>
 					<div class="col-12 col-sm-4 mt-4">
-						<a class="row text-decoration-none" href="#">
+						<a class="row text-decoration-none" href="#section__two">
 							<div class="col-2 col-sm-12 mb-4">
-								<img class="img-fluid" src="./img/2-health-benefits.jpg" alt="Coffee Flavour" width="553" height="746" loading="lazy" />
+								<img class="img-fluid" src="./img/2-health-benefits.jpg" alt="Health Benefits" width="553" height="746" loading="lazy" />
 							</div>
 							<div class="col-10">
 								<h3>Surprising Health Benefits</h3>
@@ -58,9 +58,9 @@
 						</a>
 					</div>
 					<div class="col-12 col-sm-4 mt-4">
-						<a class="row text-decoration-none" href="#">
+						<a class="row text-decoration-none" href="#section__three">
 							<div class="col-2 col-sm-12 mb-4">
-								<img class="img-fluid" src="./img/3-essential-nutrients.jpg" alt="Coffee Flavour" width="553" height="746" loading="lazy" />
+								<img class="img-fluid" src="./img/3-essential-nutrients.jpg" alt="Essential Nutrients" width="553" height="746" loading="lazy" />
 							</div>
 							<div class="col-10">
 								<h3>Essential Nutrients</h3>
@@ -97,16 +97,65 @@
 		<!-- Hero End -->
 
 		<!-- Section One Start -->
-		<section id="section__one"></section>
+		<section id="section__one" class="section container-fluid vh-100 d-flex justify-content-center align-items-center">
+			<div class="row">
+				<div class="section__col col-12 col-sm-6 d-md-flex justify-content-md-center">
+					<img class="section__one__img img-fluid py-4 py-sm-5" src="./img/1-coffee-flavour.jpg" alt="Coffee Flavour" width="553" height="746" loading="lazy" />
+				</div>
+				<div class="section__col col-12 col-sm-6 justify-content-center align-items-center align-self-center">
+					<h1 class="h2 mb-4">Amazing Flavour</h1>
+					<p class="mb-4">Indulge in unique coffee blends, crafted to tantalize your taste buds with extraordinary flavors. From rich and bold to subtly nuanced, each cup promises a journey of taste.</p>
+					<a class="text-decoration-none" href="./img/1-coffee-flavour.jpg" target="_blank">Read More <i class="bi bi-arrow-right"></i></a>
+				</div>
+			</div>
+		</section>
 		<!-- Section One End -->
 
 		<!-- Section Two Start -->
+		<section id="section__two" class="section container-fluid vh-100 d-flex justify-content-center align-items-center">
+			<div class="row">
+				<div class="section__col col-12 col-sm-6 justify-content-center align-items-center align-self-center">
+					<h1 class="h2 mb-4">Surprising Health Benefits</h1>
+					<p class="mb-4">Explore a wealth of well-being with our coffee blends, contributing to vitality and mood. Immerse yourself in the surprising health benefits of our meticulously selected coffee beans.</p>
+					<a class="text-decoration-none" href="./img/2-health-benefits.jpg" target="_blank">Read More <i class="bi bi-arrow-right"></i></a>
+				</div>
+				<div class="section__col col-12 col-sm-6 d-md-flex justify-content-md-center">
+					<img class="section__two__img img-fluid py-4 py-sm-5" src="./img/2-health-benefits.jpg" alt="Health Benefits" width="553" height="746" loading="lazy" />
+				</div>
+			</div>
+		</section>
 		<!-- Section Two End -->
 
 		<!-- Section Three Start -->
+		<section id="section__three" class="section container-fluid vh-100 d-flex justify-content-center align-items-center">
+			<div class="row">
+				<div class="section__col col-12 col-sm-6 d-md-flex justify-content-md-center">
+					<img class="section__three__img img-fluid py-4 py-sm-5" src="./img/3-essential-nutrients.jpg" alt="Essential Nutrients" width="553" height="746" loading="lazy" />
+				</div>
+				<div class="section__col col-12 col-sm-6 justify-content-center align-items-center align-self-center">
+					<h1 class="h2 mb-4">Essential Nutrients</h1>
+					<p class="mb-4">Nourish your body with essential nutrients found in our coffee blends. Imbued with vitamins and minerals, our beans offer more than a delightful taste. Elevate your coffee experience with goodness.</p>
+					<a class="text-decoration-none" href="./img/3-essential-nutrients.jpg" target="_blank">Read More <i class="bi bi-arrow-right"></i></a>
+				</div>
+			</div>
+		</section>
 		<!-- Section Three End -->
 
 		<!-- Footer Start -->
 		<!-- Footer End -->
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+				const navbarToggle = document.querySelector(".header__menu-button-open");
+				const navbarCollapse = document.getElementById("navbar");
+				const menuItems = document.querySelectorAll(".navigation-menu__container a");
+				menuItems.forEach((item) => {
+					item.addEventListener("click", () => {
+						if (navbarCollapse.classList.contains("show")) {
+							navbarToggle.click();
+						}
+					});
+				});
+			});
+		</script>
 	</body>
 </html>

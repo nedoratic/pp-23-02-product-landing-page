@@ -155,3 +155,23 @@ a:focus {
 	transition-delay: 0.5s;
 	animation: bounce 1s infinite alternate;
 }
+
+/* SECTION ONE */
+
+.section {
+	background: rgba(255, 255, 255, 1);
+}
+
+#section__two {
+	background: rgba(255, 247, 231, 1);
+}
+
+.section__col {
+	max-width: 600px;
+	margin: 0 auto;
+	text-align: justify;
+}
+
+.section__col h1 {
+	text-align: left;
+}
