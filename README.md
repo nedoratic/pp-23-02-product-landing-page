@@ -1,11 +1,13 @@
-# pp-23-02-product-landing-page
+# Practice Project - 2023 - 02 - Product Landing Page
 
-## Practice Project - 2023 - 02 - Product Landing Page
+## Tools and Tech
 
-### Tools and Tech:
+• Terminal • Git • GitHub • VSC • HTML • CSS • Bootstrap • JavaScript
 
-CLI, Terminal, Zsh, Version Control, Git, GitHub, VS Code, HTML, CSS, Bootstrap, JS
+## Approach and Methodology
 
-### Approach and Methodology
+• Desktop First Design • Responsive Web Design • Block Element Modifier
 
-Responsive Web Design, BEM (Block Element Modifier)
+## Live Preview
+
+[Homepage](https://nedoratic.github.io/pp-23-02-product-landing-page/)
